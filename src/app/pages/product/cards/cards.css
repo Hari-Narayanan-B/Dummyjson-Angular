@@ -1,0 +1,42 @@
+
+.card{
+    width:500px;
+    height:500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px  rgb(255, 255, 255);
+    box-shadow: 0 4px 8px  rgb(255, 255, 255);
+    transform: translateY(-5px);
+    transition: 0.3s;
+    background-color:white;
+    color:black;
+    margin-bottom: 30px;
+    position: relative;
+}
+.card:hover{
+    transform: scale(1.07);
+}
+.card-title{
+    color: thistle;
+}
+.card-img-top {
+    width: 100%;
+    max-width: 290px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.row {
+    display: flex;
+    gap:20px; 
+    flex-wrap: wrap;
+}
+.col {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.addcart {
+  position: absolute;
+  left: 60%;
+  bottom: 20px;
+}

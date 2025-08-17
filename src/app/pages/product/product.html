@@ -1,0 +1,12 @@
+<div class="text-center display-2 py-5">
+    <h1>Products</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      @for (item of item; track item.id) {
+        <div class="col-md-4 mb-4">
+          <app-cards [card]="item"> </app-cards>
+        </div>
+      }
+    </div>
+  </div>

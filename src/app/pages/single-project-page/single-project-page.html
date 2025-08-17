@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 class="text-center display-2 py-5">{{ product.title }}</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <img [src]="product.thumbnail" class="img-fluid" alt="{{ product.title }}">
+      </div>
+      <div class="col-md-6">
+          <div class="product-details">
+            <h2>{{ product.title }}</h2>
+            <p><strong>Description:</strong> {{ product.description }}</p>
+            <p><strong>Category:</strong> {{ product.category }}</p>
+            <p><strong>Price:</strong> ${{ product.price }}</p>
+            <p><strong>Discount:</strong> {{ product.discountPercentage }}%</p>
+            <p><strong>Rating:</strong> {{ product.rating }}</p>
+            <p><strong>Stock:</strong> {{ product.stock }}</p>
+            <p><strong>Brand:</strong> {{ product.brand }}</p>
+            <p><strong>SKU:</strong> {{ product.sku }}</p>
+            <p><strong>Weight:</strong> {{ product.weight }}g</p>
+            <div>
+              <strong>Dimensions:</strong>
+              <ul>
+                <li>Width: {{ product.dimensions.width }} mm</li>
+                <li>Height: {{ product.dimensions.height }} mm</li>
+                <li>Depth: {{ product.dimensions.depth }} mm</li>
+              </ul>
+            </div>
+          </div>
+        <p><strong>Price:</strong> ${{ product.price }}</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+</div>
